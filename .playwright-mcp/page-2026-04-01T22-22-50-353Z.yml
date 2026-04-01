@@ -1,0 +1,242 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner:
+      - link "skip to main content" [ref=e3] [cursor=pointer]:
+        - /url: "#maincontent"
+      - heading "WebAIM - Web Accessibility In Mind" [level=2] [ref=e4]:
+        - link "WebAIM - Web Accessibility In Mind" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img "WebAIM - Web Accessibility In Mind" [ref=e6]
+      - navigation [ref=e7]:
+        - heading "Main Navigation" [level=2] [ref=e8]
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "Services" [ref=e11] [cursor=pointer]:
+              - /url: /services/
+          - listitem [ref=e12]:
+            - link "Articles" [ref=e13] [cursor=pointer]:
+              - /url: /articles/
+          - listitem [ref=e14]:
+            - link "Resources" [ref=e15] [cursor=pointer]:
+              - /url: /resources/
+          - listitem [ref=e16]:
+            - link "Projects" [ref=e17] [cursor=pointer]:
+              - /url: /projects/
+          - listitem [ref=e18]:
+            - link "Community" [ref=e19] [cursor=pointer]:
+              - /url: /community/
+      - generic [ref=e20]:
+        - search [ref=e21]:
+          - paragraph [ref=e22]:
+            - generic [ref=e23]:
+              - text: "Search:"
+              - textbox "Search:" [ref=e24]
+              - button "Submit Search" [ref=e25] [cursor=pointer]
+        - paragraph [ref=e26]:
+          - link "Introduction to Web Accessibility" [ref=e27] [cursor=pointer]:
+            - /url: /intro
+        - paragraph [ref=e28]:
+          - link "WebAIM Training" [ref=e29] [cursor=pointer]:
+            - /url: /services/training
+  - main [ref=e30]:
+    - article [ref=e31]:
+      - heading "Contrast Checker" [level=1] [ref=e32]
+      - paragraph [ref=e33]:
+        - generic [ref=e34]: "You are here:"
+        - link "Home" [ref=e35] [cursor=pointer]:
+          - /url: /
+        - text: ">"
+        - link "Resources" [ref=e36] [cursor=pointer]:
+          - /url: /resources/
+        - text: "> Contrast Checker"
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - group "Foreground" [ref=e39]:
+            - generic [ref=e40]: Foreground
+            - generic [ref=e41]:
+              - text: Hex Value
+              - generic [ref=e42]:
+                - text: "#"
+                - 'textbox "Hex Value #" [ref=e43]': 4D7C0F
+            - generic [ref=e44]:
+              - text: Color Picker
+              - textbox "Color Picker" [ref=e45] [cursor=pointer]: "#4d7c0f"
+            - generic [ref=e46]:
+              - text: Alpha
+              - spinbutton "Alpha" [ref=e47]: "1"
+            - generic [ref=e48]:
+              - text: Lightness
+              - slider "Lightness" [ref=e50]: "27"
+          - group "Background" [ref=e51]:
+            - generic [ref=e52]: Background
+            - generic [ref=e53]:
+              - text: Hex Value
+              - generic [ref=e54]:
+                - text: "#"
+                - 'textbox "Hex Value #" [ref=e55]': F5F0EB
+            - generic [ref=e56]:
+              - text: Color Picker
+              - textbox "Color Picker" [ref=e57] [cursor=pointer]: "#f5f0eb"
+            - generic [ref=e58]:
+              - text: Lightness
+              - slider "Lightness" [ref=e60]: "94"
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - generic [ref=e63]:
+              - text: Contrast Ratio
+              - generic [ref=e64]: 4.4:1
+            - link "permalink" [ref=e65] [cursor=pointer]:
+              - /url: ./?fcolor=4D7C0F&bcolor=F5F0EB
+          - heading "Normal Text" [level=2] [ref=e66]
+          - generic [ref=e67]:
+            - paragraph [ref=e68]:
+              - text: "WCAG AA:"
+              - generic [ref=e69]: Fail
+            - paragraph [ref=e70]:
+              - text: "WCAG AAA:"
+              - generic [ref=e71]: Fail
+          - generic [ref=e72]: The five boxing wizards jump quickly.
+          - heading "Large Text" [level=2] [ref=e73]
+          - generic [ref=e74]:
+            - paragraph [ref=e75]:
+              - text: "WCAG AA:"
+              - generic [ref=e76]: Pass
+            - paragraph [ref=e77]:
+              - text: "WCAG AAA:"
+              - generic [ref=e78]: Fail
+          - generic [ref=e79]: The five boxing wizards jump quickly.
+          - heading "Graphical Objects and User Interface Components" [level=2] [ref=e80]
+          - paragraph [ref=e82]:
+            - text: "WCAG AA:"
+            - generic [ref=e83]: Pass
+          - generic [ref=e84]:
+            - text: ★
+            - textbox "Sample text input" [ref=e85]: Text Input
+        - generic [ref=e86]:
+          - generic [ref=e87]: WebAIM Accessibility Testing Services
+          - paragraph [ref=e88]: Web accessibility testing can be difficult! The experts at WebAIM can audit your web site and provide a detailed report to help you remediate accessibility and WCAG compliance issues.
+          - paragraph [ref=e89]:
+            - link "Learn more about WebAIM Evaluation Services" [ref=e90] [cursor=pointer]:
+              - /url: /services/evaluation
+        - heading "Explanation" [level=2] [ref=e91]
+        - paragraph [ref=e92]: Enter a foreground and background color in RGB hexadecimal format or choose a color using the Color Picker. Enter an Alpha value to adjust the transparency of the foreground color. Use the Lightness slider to adjust the perceived lightness of the color.
+        - paragraph [ref=e93]: WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text. WCAG 2.1 requires a contrast ratio of at least 3:1 for graphics and user interface components (such as form input borders). WCAG Level AAA requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.
+        - paragraph [ref=e94]: Large text is defined as 14 point (typically 18.66px) and bold or larger, or 18 point (typically 24px) or larger.
+        - paragraph [ref=e95]:
+          - strong [ref=e96]: "Hint:"
+          - text: Use the eye dropper tool in the Color Picker to extract the color value from any element on screen. Additionally,
+          - link "WAVE" [ref=e97] [cursor=pointer]:
+            - /url: http://wave.webaim.org/
+          - text: can analyze contrast ratios for all page text elements at once.
+        - paragraph [ref=e98]:
+          - text: Use
+          - link "our link contrast checker" [ref=e99] [cursor=pointer]:
+            - /url: /resources/linkcontrastchecker/?fcolor=4D7C0F&bcolor=F5F0EB
+          - text: to evaluate links that are identified using color alone.
+        - generic [ref=e100]:
+          - generic [ref=e101]: Contrast Checker API and Bookmarklet
+          - paragraph [ref=e102]:
+            - text: This tool also functions as a basic API. Simply append
+            - code [ref=e103]: "&api"
+            - text: to any
+            - link "permalink" [ref=e104] [cursor=pointer]:
+              - /url: ./?fcolor=4D7C0F&bcolor=F5F0EB
+            - text: "to get a JSON object with the contrast ratio and the AA/AAA pass/fail states. For example:"
+            - link "https://webaim.org/resources/contrastchecker/?fcolor=4D7C0F&bcolor=F5F0EB&api" [ref=e105] [cursor=pointer]:
+              - /url: ./?fcolor=4D7C0F&bcolor=F5F0EB&api
+            - text: .
+          - paragraph [ref=e106]:
+            - text: A miniature version of this Contrast Checker can be initiated within any web page by installing and using the
+            - link "Contrast Checker Bookmarklet" [ref=e107] [cursor=pointer]:
+              - /url: bookmarklet
+            - text: . This tool allows easy contrast testing of any content on your screen by using the foreground and background eyedropper tools.
+    - complementary [ref=e108]:
+      - generic [ref=e109]:
+        - heading "Related Resources" [level=2] [ref=e110]
+        - list [ref=e111]:
+          - listitem [ref=e112]:
+            - link "Contrast and Color Accessibility" [ref=e113] [cursor=pointer]:
+              - /url: /articles/contrast/
+          - listitem [ref=e114]:
+            - 'link "Quick Reference: Testing Web Content for Accessibility" [ref=e115] [cursor=pointer]':
+              - /url: /resources/evalquickref/
+          - listitem [ref=e116]:
+            - link "WebAIM Auditing & Evaluation Services" [ref=e117] [cursor=pointer]:
+              - /url: /services/evaluation
+          - listitem [ref=e118]:
+            - link "Web Accessibility for Designers" [ref=e119] [cursor=pointer]:
+              - /url: /resources/designers/
+          - listitem [ref=e120]:
+            - link "Link Contrast Checker" [ref=e121] [cursor=pointer]:
+              - /url: /resources/linkcontrastchecker/?fcolor=4D7C0F&bcolor=F5F0EB
+          - listitem [ref=e122]:
+            - link "Contrast Checker Bookmarklet" [ref=e123] [cursor=pointer]:
+              - /url: bookmarklet
+  - contentinfo [ref=e124]:
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - heading "©2026 WebAIM" [level=2] [ref=e127]
+        - paragraph [ref=e128]:
+          - text: Utah State University
+          - text: 6807 Old Main Hill
+          - text: Logan, UT 84322-6807
+          - link "435.797.7024" [ref=e129] [cursor=pointer]:
+            - /url: tel:4357977024
+        - generic [ref=e130]:
+          - heading "Check Your Accessibility" [level=2] [ref=e131]
+          - generic [ref=e132]:
+            - text: "Web site address:"
+            - textbox "Web site address:" [ref=e133]
+            - button "WAVE" [ref=e134] [cursor=pointer]
+      - generic [ref=e135]:
+        - heading "From the Blog" [level=2] [ref=e136]
+        - list [ref=e137]:
+          - listitem [ref=e138]:
+            - 'link "Ask AIMee: An accessible accessibility-focused AI chatbot" [ref=e139] [cursor=pointer]':
+              - /url: /blog/ask-aimee/
+          - listitem [ref=e140]:
+            - link "A New Path for Digital Accessibility?" [ref=e141] [cursor=pointer]:
+              - /url: /blog/a-new-path/
+          - listitem [ref=e142]:
+            - 'link "2026 Predictions: The Next Big Shifts in Web Accessibility" [ref=e143] [cursor=pointer]':
+              - /url: /blog/2026-predictions/
+          - listitem [ref=e144]:
+            - link "Word and PowerPoint Alt Text Roundup" [ref=e145] [cursor=pointer]:
+              - /url: /blog/word-and-powerpoint-alt-text-roundup/
+      - generic [ref=e146]:
+        - heading "Popular Resources" [level=2] [ref=e147]
+        - list [ref=e148]:
+          - listitem [ref=e149]:
+            - link "WebAIM Training" [ref=e150] [cursor=pointer]:
+              - /url: /services/training/
+          - listitem [ref=e151]:
+            - link "WCAG 2 Checklist" [ref=e152] [cursor=pointer]:
+              - /url: /standards/wcag/checklist
+          - listitem [ref=e153]:
+            - link "WebAIM Monthly Newsletter" [ref=e154] [cursor=pointer]:
+              - /url: /newsletter
+          - listitem [ref=e155]:
+            - link "Color Contrast Checker" [ref=e156] [cursor=pointer]:
+              - /url: /resources/contrastchecker
+          - listitem [ref=e157]:
+            - link "Web Accessibility for Designers" [ref=e158] [cursor=pointer]:
+              - /url: /resources/designers/
+          - listitem [ref=e159]:
+            - link "WAVE Web Accessibility Evaluation Tool" [ref=e160] [cursor=pointer]:
+              - /url: http://wave.webaim.org/
+      - list [ref=e162]:
+        - listitem [ref=e163]:
+          - link "Contact" [ref=e164] [cursor=pointer]:
+            - /url: /contact
+        - listitem [ref=e165]:
+          - link "About" [ref=e166] [cursor=pointer]:
+            - /url: /about
+        - listitem [ref=e167]:
+          - link "RSS Feeds" [ref=e168] [cursor=pointer]:
+            - /url: /community/rss
+        - listitem [ref=e169]:
+          - link "LinkedIn" [ref=e170] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/webaim/
+        - listitem [ref=e171]:
+          - link "Copyright & Terms of Use" [ref=e172] [cursor=pointer]:
+            - /url: /copyright

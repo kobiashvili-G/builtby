@@ -1,0 +1,207 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - img [ref=e18]
+      - banner [ref=e29]:
+        - link "Home" [ref=e30] [cursor=pointer]:
+          - /url: /
+          - img [ref=e31]
+        - generic [ref=e35]: Home
+        - button "Menu" [ref=e36] [cursor=pointer]:
+          - img [ref=e37]
+      - main [ref=e39]:
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - link "Home" [ref=e44] [cursor=pointer]:
+              - /url: /
+              - img [ref=e45]
+            - heading "Fluid Glass" [level=1] [ref=e56]
+            - button "Get a quote" [ref=e57] [cursor=pointer]:
+              - img [ref=e58]
+              - generic [ref=e61]:
+                - generic [ref=e62]: Get a quote
+                - generic [ref=e63]: Get a quote
+          - generic [ref=e65]:
+            - paragraph [ref=e67]:
+              - generic [ref=e69]: Exceptional glazing for those
+              - generic [ref=e71]: who build with vision.
+            - generic [ref=e72]:
+              - heading "Glazing specialists" [level=2] [ref=e73]
+              - paragraph [ref=e74]: We design and install bespoke glass systems for ambitious architectural projects. Every pane reflects our commitment to clarity, quality, and collaboration.
+          - generic [ref=e79]:
+            - heading "About Fluid Glass" [level=2] [ref=e80]
+            - paragraph [ref=e81]:
+              - generic [ref=e83]: We bring architecture to life through
+              - generic [ref=e85]: craft and innovation. Trusted by
+              - generic [ref=e87]: architects who demand precision,
+              - generic [ref=e89]: beauty, and care.
+            - link "Who we are" [ref=e90] [cursor=pointer]:
+              - /url: /about
+              - img [ref=e91]
+              - generic [ref=e94]:
+                - generic [ref=e95]: Who we are
+                - generic [ref=e96]: Who we are
+          - generic [ref=e98]:
+            - heading "Product collection" [level=2] [ref=e99]
+            - generic [ref=e100]:
+              - paragraph [ref=e102]:
+                - text: Our
+                - strong [ref=e103]: glazing collection
+                - text: is defined by exceptional craftsmanship, refined design, and enduring quality. Made for bold architecture and uncompromising vision.
+              - link "Product overview" [ref=e104] [cursor=pointer]:
+                - /url: /collection/
+                - img [ref=e105]
+                - generic [ref=e108]:
+                  - generic [ref=e109]: Product overview
+                  - generic [ref=e110]: Product overview
+            - generic [ref=e111]:
+              - link "Doors" [ref=e112] [cursor=pointer]:
+                - /url: /collection/
+                - heading "Doors" [level=3] [ref=e113]
+              - link "Windows" [ref=e114] [cursor=pointer]:
+                - /url: /collection/
+                - heading "Windows" [level=3] [ref=e115]
+              - link "Additional" [ref=e116] [cursor=pointer]:
+                - /url: /collection/
+                - heading "Additional" [level=3] [ref=e117]
+              - link "Structural" [ref=e118] [cursor=pointer]:
+                - /url: /collection/
+                - heading "Structural" [level=3] [ref=e119]
+          - generic:
+            - heading "Showroom" [level=2]
+            - generic:
+              - generic:
+                - generic:
+                  - paragraph:
+                    - generic:
+                      - generic: A place where precision
+                    - generic:
+                      - generic: and creativity connect.
+                - generic:
+                  - generic:
+                    - generic: Address
+                    - paragraph:
+                      - text: Orbital 25 Business Park, Unit 11
+                      - text: Watford WD18 9DA, UK
+                  - link "Showroom" [ref=e120] [cursor=pointer]:
+                    - /url: /showroom
+                    - img [ref=e121]
+                    - generic [ref=e124]:
+                      - generic [ref=e125]: Showroom
+                      - generic [ref=e126]: Showroom
+          - generic [ref=e130]:
+            - heading "Featured projects" [level=2] [ref=e131]
+            - generic [ref=e132]:
+              - paragraph [ref=e133]:
+                - generic [ref=e135]: Each project tells its own story
+                - generic [ref=e137]: of collaboration and precision.
+              - link "View projects" [ref=e138] [cursor=pointer]:
+                - /url: /projects/
+                - img [ref=e139]
+                - generic [ref=e142]:
+                  - generic [ref=e143]: View projects
+                  - generic [ref=e144]: View projects
+            - generic [ref=e145]:
+              - link "Rusty House Fluid Window Fluid X Vertical (Structural Glazing) Fluid X Sliding Door" [ref=e146] [cursor=pointer]:
+                - /url: /projects/rusty-house
+                - heading "Rusty House" [level=3] [ref=e147]
+                - generic [ref=e148]:
+                  - generic [ref=e149]: Fluid Window
+                  - generic [ref=e150]: Fluid X Vertical (Structural Glazing)
+                  - generic [ref=e151]: Fluid X Sliding Door
+                - img [ref=e152]
+              - link "Rosewood Pilates Studio Fluid X Sliding Door Fluid Glass Skylight / Ridgelight" [ref=e154] [cursor=pointer]:
+                - /url: /projects/rosewood-pilates-studio
+                - heading "Rosewood Pilates Studio" [level=3] [ref=e155]
+                - generic [ref=e156]:
+                  - generic [ref=e157]: Fluid X Sliding Door
+                  - generic [ref=e158]: Fluid Glass Skylight / Ridgelight
+                - img [ref=e159]
+              - link "Beulah Walk Fluid X Vertical (Structural Glazing) Fluid Sliding Door Fluid Window" [ref=e161] [cursor=pointer]:
+                - /url: /projects/beulah-walk
+                - heading "Beulah Walk" [level=3] [ref=e162]
+                - generic [ref=e163]:
+                  - generic [ref=e164]: Fluid X Vertical (Structural Glazing)
+                  - generic [ref=e165]: Fluid Sliding Door
+                  - generic [ref=e166]: Fluid Window
+                - img [ref=e167]
+              - link "Berkeley Road Fluid X Sliding Door Fluid Sliding Door" [ref=e169] [cursor=pointer]:
+                - /url: /projects/berkeley-road
+                - heading "Berkeley Road" [level=3] [ref=e170]
+                - generic [ref=e171]:
+                  - generic [ref=e172]: Fluid X Sliding Door
+                  - generic [ref=e173]: Fluid Sliding Door
+                - img [ref=e174]
+          - generic [ref=e181]:
+            - generic [ref=e182]:
+              - heading "Client stories" [level=2] [ref=e183]
+              - generic [ref=e184]: 01 / 05
+              - generic [ref=e185]:
+                - button "Previous" [ref=e186] [cursor=pointer]:
+                  - img [ref=e187]
+                - button "Next" [ref=e189] [cursor=pointer]:
+                  - img [ref=e190]
+            - generic [ref=e193]:
+              - img [ref=e194]
+              - blockquote "Unrivaled customer service, cutting edge design and quality. Fluid Glass is firmly lodged in our list of preferred suppliers of glazing products." [ref=e196]:
+                - generic [ref=e198]: Unrivaled customer service, cutting
+                - generic [ref=e200]: edge design and quality. Fluid Glass
+                - generic [ref=e202]: is firmly lodged in our list of preferred
+                - generic [ref=e204]: suppliers of glazing products.
+              - paragraph [ref=e206]:
+                - generic [ref=e207]: Vaidas Vileikis
+                - generic [ref=e208]: Founder, Name Architects
+            - 'link "Google review score: 5.0 of 5" [ref=e210] [cursor=pointer]':
+              - /url: https://www.google.com/search?sca_esv=6a0b219675808712&rlz=1C5CHFA_enNL1177NL1177&sxsrf=ANbL-n6G7mK3A0qoZ1xWmn-y82YJwR0YZg:1769501850752&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOVc4u1Bs4pgMyFGwe_f1Byo2HtHiSwFlKfxceye972hu7AzydH027Rw0aOAz6bGa4POzWG-Vz8VT1uR0TYJm5qkWk-Fx&q=Fluid+Glass+Reviews&sa=X&ved=2ahUKEwi9kfmJpKuSAxVkgv0HHXNGK0cQ0bkNegQIKhAH&biw=1715&bih=973&dpr=2&aic=0
+              - img [ref=e211]
+              - text: "Google review score: 5.0 of 5"
+          - generic [ref=e218]:
+            - heading "Where vision meets execution" [level=2] [ref=e219]
+            - paragraph [ref=e220]:
+              - generic [ref=e222]: Every great build begins
+              - generic [ref=e224]: with understanding
+            - generic [ref=e225]:
+              - link "Our approach" [ref=e226] [cursor=pointer]:
+                - /url: /approach
+                - img [ref=e227]
+                - generic [ref=e230]:
+                  - generic [ref=e231]: Our approach
+                  - generic [ref=e232]: Our approach
+              - link "Get in touch" [ref=e233] [cursor=pointer]:
+                - /url: /contact
+                - img [ref=e234]
+                - generic [ref=e237]:
+                  - generic [ref=e238]: Get in touch
+                  - generic [ref=e239]: Get in touch
+            - img [ref=e240]
+          - generic [ref=e244]:
+            - link:
+              - /url: /
+              - img
+            - generic [ref=e245]:
+              - generic [ref=e246]: ©2026, Fluid Glass
+              - generic [ref=e247]:
+                - list [ref=e248]:
+                  - listitem [ref=e249]:
+                    - link "Instagram" [ref=e250] [cursor=pointer]:
+                      - /url: https://www.instagram.com/fluidglassuk/
+                  - listitem [ref=e251]:
+                    - link "YouTube" [ref=e252] [cursor=pointer]:
+                      - /url: https://www.youtube.com/@fluidglassuk/videos
+                  - listitem [ref=e253]:
+                    - link "LinkedIn" [ref=e254] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/fluidglassuk/
+                  - listitem [ref=e255]:
+                    - link "X" [ref=e256] [cursor=pointer]:
+                      - /url: https://x.com/fluidglassuk/
+                - list [ref=e257]:
+                  - listitem [ref=e258]:
+                    - link "Privacy policy" [ref=e259] [cursor=pointer]:
+                      - /url: /privacy-policy
+                  - listitem [ref=e260]:
+                    - link "Terms & conditions" [ref=e261] [cursor=pointer]:
+                      - /url: /terms-conditions
+              - link "Crafted by Exo Ape" [ref=e262] [cursor=pointer]:
+                - /url: https://www.exoape.com/

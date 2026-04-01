@@ -1,0 +1,406 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Lando Home" [ref=e2] [cursor=pointer]:
+        - /url: /
+        - img [ref=e4]
+      - generic [ref=e7]:
+        - link "Store" [ref=e8] [cursor=pointer]:
+          - /url: https://store.landonorris.com/
+          - generic [ref=e9]:
+            - img [ref=e12]
+            - generic [ref=e15]: Store
+        - button "Open / Close Menu" [ref=e16] [cursor=pointer]
+      - link "Go to home" [ref=e19] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e22]: Go to home
+  - link "Load Norris" [ref=e27] [cursor=pointer]:
+    - /url: "#"
+    - generic [ref=e30]: Load Norris
+  - main [ref=e32]:
+    - generic [ref=e33]:
+      - generic:
+        - heading "Lando Norris" [level=1] [ref=e34]
+        - heading "2025 Mclaren Formula 1 Driver" [level=2] [ref=e35]
+      - generic [ref=e37]:
+        - generic [ref=e41]:
+          - img [ref=e43]
+          - generic [ref=e46]: Next Race
+          - list [ref=e48]:
+            - listitem [ref=e49]:
+              - link "Sakhir gp" [ref=e50] [cursor=pointer]:
+                - /url: /calendar
+                - generic [ref=e54]:
+                  - generic [ref=e55]: Sakhir
+                  - generic [ref=e56]: gp
+          - generic [ref=e63]: mclaren f1 since 2019
+        - generic [ref=e72]: Message from lando
+      - generic [ref=e78]:
+        - generic [ref=e83]: mclaren f1 since 2019
+        - generic [ref=e84]:
+          - strong [ref=e85]: Redefining
+          - text: limits, fighting for
+          - strong [ref=e86]: wins
+          - text: ", bringing it all in all ways. Defining a"
+          - strong [ref=e87]: legacy
+          - text: in Formula 1 on and off the track.
+      - generic [ref=e93]:
+        - generic [ref=e94]:
+          - generic [ref=e96]:
+            - generic [ref=e98]: Qatar, 2024
+            - generic [ref=e99]:
+              - img "Lando in casual clothes walking through paddock"
+          - generic [ref=e101]:
+            - generic [ref=e103]: FIA Prize Giving, 2024
+            - generic [ref=e104]:
+              - img "Lando lifting trophy in tux"
+        - generic [ref=e106]:
+          - generic [ref=e109]:
+            - generic [ref=e110]: It doesn’t matter where you start, it’s how you progress from there.
+            - img "Lando's signature in lime color" [ref=e112]
+          - generic [ref=e114]:
+            - generic [ref=e116]: Miami GP, 2024
+            - generic [ref=e117]:
+              - img "Lando lifting tophy"
+        - generic [ref=e119]:
+          - generic [ref=e121]:
+            - generic [ref=e123]: Monaco, 2023
+            - generic [ref=e124]:
+              - img "Lando playing golf"
+          - generic [ref=e126]:
+            - generic [ref=e128]: Britain, 2025
+            - generic [ref=e129]:
+              - img "Lando in f1 car"
+            - generic [ref=e133]: "1"
+        - generic [ref=e138]:
+          - generic [ref=e140]: Battersea, 2024
+          - generic [ref=e141]:
+            - img "Lando holding dog smiling"
+        - generic [ref=e144]:
+          - generic [ref=e146]: High Performance Gala, 2024
+          - generic [ref=e147]:
+            - img "Lando in tux"
+        - generic [ref=e149]:
+          - generic [ref=e151]:
+            - generic [ref=e153]: Barcelona, 2024
+            - generic [ref=e154]:
+              - img "Lando taking photo out of a plane"
+          - generic [ref=e158]: Since I was 7 years old and had my first experience with kart racing, I’ve worked tirelessly to make that dream come true.
+        - generic [ref=e161]:
+          - generic [ref=e163]:
+            - generic [ref=e165]: austria, 2020
+            - generic [ref=e166]:
+              - img "Lando lifting trophy"
+          - generic [ref=e168]:
+            - generic [ref=e170]: US, 2024
+            - generic [ref=e171]:
+              - img "Lando celebrating a win"
+      - generic [ref=e172]:
+        - generic [ref=e175]:
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - generic [ref=e179]:
+                - heading "ON" [level=2] [ref=e180]: "ON"
+                - heading "TRACK" [level=2] [ref=e181]
+              - paragraph [ref=e185]:
+                - text: Most recent
+                - strong [ref=e186]: results
+                - text: ", career stats and photos from trackside."
+              - link "On Track page" [ref=e188] [cursor=pointer]:
+                - /url: /on-track
+            - generic [ref=e191]:
+              - generic [ref=e192]:
+                - heading "OFF" [level=2] [ref=e193]: "OFF"
+                - heading "TRACK" [level=2] [ref=e194]
+              - paragraph [ref=e196]:
+                - strong [ref=e197]: Campaigns
+                - text: ", shoots and other such promotional materials for fans"
+              - link "Off Track Page" [ref=e199] [cursor=pointer]:
+                - /url: /off-track
+          - generic [ref=e202]:
+            - img "Lando Norris wearing a lime helmet, side profile" [ref=e204]
+            - img "Lando Norris wearing a fleece side profile" [ref=e206]
+        - img "Lando lifting helmet up" [ref=e209]
+      - generic [ref=e210]:
+        - generic [ref=e212]:
+          - generic [ref=e213]:
+            - generic [ref=e214]:
+              - heading "Helmets" [level=2] [ref=e215]: Helmets
+              - heading "Hall of Fame" [level=2] [ref=e216]
+            - paragraph [ref=e218]: From his iconic blobs to innovative one-off designs, Lando has always been passionate about designing innovative and memorable helmets.
+          - list [ref=e221]:
+            - listitem [ref=e222]:
+              - generic [ref=e223]:
+                - generic [ref=e224]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e226]:
+                  - heading "Season" [level=3] [ref=e227]
+                  - generic [ref=e229]: "2025"
+            - listitem [ref=e230]:
+              - generic [ref=e231]:
+                - generic [ref=e232]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e234]:
+                  - heading "Discoball" [level=3] [ref=e235]
+                  - generic [ref=e237]: "2025"
+            - listitem [ref=e238]:
+              - generic [ref=e239]:
+                - generic [ref=e240]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e242]:
+                  - heading "Dark Glitter" [level=3] [ref=e243]
+                  - generic [ref=e245]: "2025"
+            - listitem [ref=e246]:
+              - generic [ref=e247]:
+                - generic [ref=e248]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e250]:
+                  - heading "Season" [level=3] [ref=e251]
+                  - generic [ref=e253]: "2024"
+            - listitem [ref=e254]:
+              - generic [ref=e255]:
+                - generic [ref=e256]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e258]:
+                  - heading "Porcelain" [level=3] [ref=e259]
+                  - generic [ref=e261]: "2024"
+            - listitem [ref=e262]:
+              - generic [ref=e263]:
+                - generic [ref=e264]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e266]:
+                  - heading "Japan" [level=3] [ref=e267]
+                  - generic [ref=e269]: "2024"
+            - listitem [ref=e270]:
+              - generic [ref=e271]:
+                - generic [ref=e272]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e274]:
+                  - heading "GIF" [level=3] [ref=e275]
+                  - generic [ref=e277]: "2024"
+            - listitem [ref=e278]:
+              - generic [ref=e279]:
+                - generic [ref=e280]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e282]:
+                  - heading "Dark Mode" [level=3] [ref=e283]
+                  - generic [ref=e285]: "2024"
+            - listitem [ref=e286]:
+              - generic [ref=e287]:
+                - generic [ref=e288]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e290]:
+                  - heading "Race" [level=3] [ref=e291]
+                  - generic [ref=e293]: "2023"
+            - listitem [ref=e294]:
+              - generic [ref=e295]:
+                - generic [ref=e296]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e298]:
+                  - heading "Las Vegas" [level=3] [ref=e299]
+                  - generic [ref=e301]: "2023"
+            - listitem [ref=e302]:
+              - generic [ref=e303]:
+                - generic [ref=e304]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e306]:
+                  - heading "Chrome" [level=3] [ref=e307]
+                  - generic [ref=e309]: "2023"
+            - listitem [ref=e310]:
+              - generic [ref=e311]:
+                - generic [ref=e312]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e314]:
+                  - heading "Beachball" [level=3] [ref=e315]
+                  - generic [ref=e317]: "2023"
+            - listitem [ref=e318]:
+              - generic [ref=e319]:
+                - generic [ref=e320]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e322]:
+                  - heading "Basketball" [level=3] [ref=e323]
+                  - generic [ref=e325]: "2022"
+            - listitem [ref=e326]:
+              - generic [ref=e327]:
+                - generic [ref=e328]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e330]:
+                  - heading "Season" [level=3] [ref=e331]
+                  - generic [ref=e333]: "2021"
+            - listitem [ref=e334]:
+              - generic [ref=e335]:
+                - generic [ref=e336]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e338]:
+                  - heading "Silverstone" [level=3] [ref=e339]
+                  - generic [ref=e341]: "2020"
+            - listitem [ref=e342]:
+              - generic [ref=e343]:
+                - generic [ref=e344]:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - img
+                - generic [ref=e346]:
+                  - heading "Season" [level=3] [ref=e347]
+                  - generic [ref=e349]: "2019"
+        - generic [ref=e352]:
+          - generic [ref=e357]: See more helmets and highlights from Lando on the track
+          - link "view on track" [ref=e358] [cursor=pointer]:
+            - /url: /on-track
+            - generic [ref=e361]: view on track
+      - generic [ref=e371]:
+        - generic [ref=e372]:
+          - img [ref=e375]
+          - generic [ref=e377]: LANDO STORE
+        - heading "World Drivers' Champion" [level=2] [ref=e379]
+        - paragraph [ref=e381]: Celebrate this incredible moment with a collection designed for the fans who never stopped believing. Wear it, frame it, treasure it forever.
+        - link "Visit the store" [ref=e382] [cursor=pointer]:
+          - /url: https://landonorris.store/
+          - generic [ref=e385]: Visit the store
+      - generic [ref=e399]:
+        - generic [ref=e400]:
+          - heading "partners" [level=2] [ref=e401]
+          - heading "&campaigns" [level=2] [ref=e402]
+        - paragraph [ref=e405]: Lando is proud to collaborate with a range of partners, who share his passion for performance across a range of industries.
+      - generic [ref=e429]:
+        - heading "what’s up On Socials" [level=2] [ref=e433]:
+          - generic [ref=e434]: what’s up
+          - generic [ref=e435]: On Socials
+        - generic [ref=e452]: Follow Lando on social media
+        - generic [ref=e453]:
+          - link "tiktok" [ref=e454] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@landonorris
+            - generic [ref=e456]: tiktok
+          - link "instagram" [ref=e457] [cursor=pointer]:
+            - /url: https://www.instagram.com/lando
+            - generic [ref=e459]: instagram
+          - link "Youtube" [ref=e460] [cursor=pointer]:
+            - /url: https://www.youtube.com/@LandoNorris
+            - generic [ref=e462]: Youtube
+          - link "Twitch" [ref=e463] [cursor=pointer]:
+            - /url: https://www.twitch.tv/landonorris
+            - generic [ref=e465]: Twitch
+      - generic [ref=e469]:
+        - generic [ref=e471]:
+          - generic [ref=e472]:
+            - generic [ref=e473]:
+              - generic [ref=e475]: pages
+              - generic [ref=e476]:
+                - link "Home" [ref=e477] [cursor=pointer]:
+                  - /url: /
+                  - generic [ref=e479]: Home
+                - link "On Track" [ref=e480] [cursor=pointer]:
+                  - /url: /on-track
+                  - generic [ref=e482]: On Track
+                - link "Off Track" [ref=e483] [cursor=pointer]:
+                  - /url: /off-track
+                  - generic [ref=e485]: Off Track
+                - link "Calendar" [ref=e486] [cursor=pointer]:
+                  - /url: /calendar
+                  - generic [ref=e488]: Calendar
+              - link "Store" [ref=e489] [cursor=pointer]:
+                - /url: https://store.landonorris.com/
+                - generic [ref=e491]: Store
+            - generic [ref=e492]:
+              - generic [ref=e494]: Follow On
+              - generic [ref=e495]:
+                - link "Tiktok" [ref=e496] [cursor=pointer]:
+                  - /url: https://www.tiktok.com/@landonorris
+                  - generic [ref=e498]: Tiktok
+                - link "Instagram" [ref=e499] [cursor=pointer]:
+                  - /url: https://www.instagram.com/lando
+                  - generic [ref=e501]: Instagram
+                - link "Youtube" [ref=e502] [cursor=pointer]:
+                  - /url: https://www.youtube.com/@LandoNorris
+                  - generic [ref=e504]: Youtube
+                - link "Twitch" [ref=e505] [cursor=pointer]:
+                  - /url: https://www.twitch.tv/landonorris
+                  - generic [ref=e507]: Twitch
+              - link "Sign Up":
+                - /url: "#"
+                - generic:
+                  - generic: Sign Up
+          - heading "Always bringing the fight." [level=2] [ref=e513]
+          - link "business enquiries" [ref=e515] [cursor=pointer]:
+            - /url: mailto:business@landonorris.com
+            - generic [ref=e518]: business enquiries
+          - generic [ref=e527]:
+            - img [ref=e530]
+            - img [ref=e534]
+            - img [ref=e538]
+            - img [ref=e543]
+            - img [ref=e549]
+            - img [ref=e555]
+            - img [ref=e559]
+            - img [ref=e565]
+        - generic [ref=e574]:
+          - generic [ref=e576]: © 2026 Lando Norris. All rights reserved
+          - generic [ref=e577]:
+            - link "Privacy Policy" [ref=e578] [cursor=pointer]:
+              - /url: /legal/privacy-policy
+              - generic [ref=e580]: Privacy Policy
+            - link "Terms" [ref=e581] [cursor=pointer]:
+              - /url: /legal/terms-conditions
+              - generic [ref=e583]: Terms
