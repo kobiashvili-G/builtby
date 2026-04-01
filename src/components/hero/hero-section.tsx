@@ -10,7 +10,7 @@ export function HeroSection() {
     <section className="relative flex min-h-screen items-end overflow-hidden pb-16 pl-8 md:pl-16">
       <GlowyWaves />
 
-      {/* Hero image — MUST blend seamlessly, no hard edges */}
+      {/* Glow element */}
       <div className="absolute left-1/2 top-1/2 h-[50vh] w-[35vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent-bg/20 blur-[100px]" />
       <div
         className="absolute left-1/2 top-1/2 h-[70vh] w-[45vw] -translate-x-1/2 -translate-y-1/2"
@@ -19,7 +19,6 @@ export function HeroSection() {
           WebkitMaskImage: "radial-gradient(ellipse at center, black 30%, transparent 70%)",
         }}
       >
-        {/* Replace with artist-sourced image later */}
         <div className="h-full w-full bg-gradient-to-br from-emerald-400/40 via-lime-300/50 to-amber-200/30" />
       </div>
 
@@ -31,16 +30,16 @@ export function HeroSection() {
         className="absolute left-8 top-28 z-20 border border-subtle p-4 md:left-16"
       >
         <span className="font-body text-[9px] font-semibold uppercase tracking-[2px] text-tertiary">
-          ACTIVE PROJECTS
+          LIVE NOW
         </span>
         <p className="font-display text-5xl font-extrabold text-primary">
           {String(projects.length).padStart(2, "0")}
         </p>
         <div className="my-3 h-px w-full bg-subtle" />
         <span className="font-body text-[9px] font-medium uppercase tracking-[1.5px] text-secondary leading-relaxed">
-          VERCEL
+          PROJECTS
           <br />
-          SINCE 2024
+          RUNNING
         </span>
       </motion.div>
 
@@ -52,11 +51,10 @@ export function HeroSection() {
         className="absolute right-8 top-[55%] z-20 max-w-[300px] md:right-16"
       >
         <p className="font-body text-2xl italic leading-relaxed text-secondary">
-          Things I built
+          Where ideas become
           <br />
-          with love &amp; code.
+          working software.
         </p>
-        <p className="mt-2 font-body text-lg italic text-accent">— Kobi</p>
       </motion.div>
 
       {/* Hero text */}
@@ -68,9 +66,9 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-6 max-w-[340px] font-body text-base text-secondary"
         >
-          A collection of live projects, experiments
+          Live projects, tools, and experiments
           <br />
-          &amp; tools — crafted with curiosity.
+          — all in one place.
         </motion.p>
       </div>
     </section>

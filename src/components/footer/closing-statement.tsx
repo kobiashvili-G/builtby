@@ -2,8 +2,8 @@
 
 import { motion } from "motion/react";
 
-const line1Words = ["BUILDING", "IDEAS", "INTO"];
-const line2Words = ["REAL", "THINGS."];
+const line1Words = ["SHIPPING", "IS", "THE"];
+const line2Words = ["ONLY", "PROOF."];
 
 function RevealWord({ word, index, accent }: { word: string; index: number; accent?: boolean }) {
   return (

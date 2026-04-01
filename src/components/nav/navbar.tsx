@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ExternalLink, Menu } from "lucide-react";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -14,7 +13,7 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 z-50 flex h-20 w-full items-center justify-between px-8 transition-all duration-300 md:px-16 relative ${
+      className={`fixed top-0 z-50 flex h-20 w-full items-center justify-between px-8 transition-all duration-300 md:px-16 ${
         scrolled ? "bg-cream/80 backdrop-blur-md" : "bg-transparent"
       }`}
     >
@@ -22,25 +21,9 @@ export function Navbar() {
         BUILTBY
       </span>
 
-      <span className="absolute left-1/2 -translate-x-1/2 font-display text-lg font-extrabold text-primary">
-        B
+      <span className="font-display text-[14px] font-extrabold tracking-[1px] text-tertiary">
+        .PRO
       </span>
-
-      <div className="flex items-center gap-4">
-        <a
-          href="#projects"
-          className="flex items-center gap-2 rounded-lg bg-accent-bg px-5 py-2.5 font-body text-xs font-semibold uppercase tracking-[1.5px] text-primary transition-transform hover:scale-105"
-        >
-          <ExternalLink size={16} />
-          PROJECTS
-        </a>
-        <button
-          className="rounded-lg border border-subtle bg-white p-2.5 transition-colors hover:bg-cream"
-          aria-label="Menu"
-        >
-          <Menu size={20} className="text-primary" />
-        </button>
-      </div>
     </nav>
   );
 }

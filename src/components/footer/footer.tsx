@@ -4,7 +4,7 @@ export function Footer() {
       <div className="h-px w-full bg-subtle" />
       <div className="mt-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <span className="font-body text-xs text-tertiary">
-          ©2026, BuiltBy.pro
+          BuiltBy.pro — 2026
         </span>
         <div className="flex gap-6">
           {/* TODO: Replace "#" with real URLs before launch */}
@@ -24,9 +24,6 @@ export function Footer() {
           ))}
         </div>
       </div>
-      <p className="mt-4 font-body text-[11px] text-subtle">
-        Crafted with curiosity and code
-      </p>
     </footer>
   );
 }

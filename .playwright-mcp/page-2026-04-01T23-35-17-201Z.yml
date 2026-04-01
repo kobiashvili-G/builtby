@@ -1,0 +1,58 @@
+- generic:
+  - generic [active]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - navigation [ref=e6]:
+            - button "previous" [disabled] [ref=e7]:
+              - img "previous" [ref=e8]
+            - generic [ref=e10]:
+              - generic [ref=e11]: 1/
+              - text: "1"
+            - button "next" [disabled] [ref=e12]:
+              - img "next" [ref=e13]
+          - img
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - img [ref=e17]
+            - generic "Latest available version is detected (16.2.2)." [ref=e19]: Next.js 16.2.2
+            - generic [ref=e20]: Turbopack
+          - img
+      - generic [ref=e21]:
+        - dialog "Runtime Error" [ref=e22]:
+          - generic [ref=e26]:
+            - generic [ref=e27]:
+              - generic [ref=e29]: Runtime Error
+              - generic [ref=e30]:
+                - button "Copy Error Info" [ref=e31] [cursor=pointer]:
+                  - img [ref=e32]
+                - button "No related documentation found" [disabled] [ref=e34]:
+                  - img [ref=e35]
+                - button "Attach Node.js inspector" [ref=e37] [cursor=pointer]:
+                  - img [ref=e38]
+            - generic [ref=e46]:
+              - generic [ref=e47]: "Cannot find module '../chunks/ssr/[turbopack]_runtime.js' Require stack: - /Users/kobi/Documents/Dev/builtby/.next/dev/server/pages/_document.js - /Users/kobi/Documents/Dev/builtby/node_modules/next/dist/server/require.js - /Users/kobi/Documents/Dev/builtby/node_modules/next/dist/server/load-components.js - /Users/kobi/Documents/Dev/builtby/node_modules/next/dist/build/utils.js - /Users/kobi/Documents/Dev/builtby/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js - /Users/kobi/Documents/Dev/builtby/node_modules/next/dist/server/lib/router-server.js - /Users/kobi/Documents/Dev/builtby/node_modules/next/dist/server/lib/start-server.js"
+              - button "Show More" [ref=e49] [cursor=pointer]
+          - generic [ref=e50]: "1"
+          - generic [ref=e51]: "2"
+        - contentinfo [ref=e52]:
+          - region "Error feedback" [ref=e53]:
+            - paragraph [ref=e54]:
+              - link "Was this helpful?" [ref=e55] [cursor=pointer]:
+                - /url: https://nextjs.org/telemetry#error-feedback
+            - button "Mark as helpful" [ref=e56] [cursor=pointer]:
+              - img [ref=e57]
+            - button "Mark as not helpful" [ref=e60] [cursor=pointer]:
+              - img [ref=e61]
+    - generic [ref=e67] [cursor=pointer]:
+      - button "Open Next.js Dev Tools" [ref=e68]:
+        - img [ref=e69]
+      - generic [ref=e72]:
+        - button "Open issues overlay" [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]: "0"
+            - generic [ref=e76]: "1"
+          - generic [ref=e77]: Issue
+        - button "Collapse issues badge" [ref=e78]:
+          - img [ref=e79]
+  - alert [ref=e81]
