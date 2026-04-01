@@ -1,8 +1,9 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion, useMotionValue, useTransform } from "motion/react";
+import { useLenis } from "lenis/react";
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, useCallback } from "react";
 import type { Project } from "@/lib/projects";
 import { getProjectUrl } from "@/lib/projects";
 
@@ -32,11 +33,18 @@ const titleSizes = {
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
   const ref = useRef<HTMLAnchorElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-  const imageY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+  const imageY = useMotionValue("0%");
+
+  useLenis(useCallback(({ scroll }: { scroll: number }) => {
+    if (ref.current) {
+      const rect = ref.current.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      const progress = 1 - (rect.top + rect.height) / (windowHeight + rect.height);
+      const clampedProgress = Math.max(0, Math.min(1, progress));
+      const yValue = (clampedProgress - 0.5) * 20; // -10% to 10%
+      imageY.set(`${yValue}%`);
+    }
+  }, [imageY]));
 
   return (
     <motion.a

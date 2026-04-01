@@ -11,47 +11,37 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: "ANALYTICS",
-    nameAccent: "DASHBOARD",
-    subdomain: "analytics",
-    category: "ANALYTICS DASHBOARD",
+    name: "IMAGE",
+    nameAccent: "APPROVER",
+    subdomain: "image",
+    category: "IMAGE REVIEW TOOL",
     year: 2024,
     description:
-      "A real-time dashboard for tracking analytics and user engagement metrics.",
-    image: "/projects/analytics.png",
+      "A web app for collecting approve/reject feedback on images — streamlined visual content moderation.",
+    image: "/projects/image-approver.jpg",
     size: "large",
   },
   {
-    name: "AI",
-    nameAccent: "WRITER",
-    subdomain: "writer",
-    category: "AI WRITING TOOL",
+    name: "AI PROMPT",
+    nameAccent: "TESTER",
+    subdomain: "prompt",
+    category: "AI TESTING TOOL",
     year: 2025,
     description:
-      "An AI-powered writing assistant that helps create better content faster.",
-    image: "/projects/writer.png",
+      "A web tool for testing and comparing AI prompts against multiple models — find what works best.",
+    image: "/projects/prompt-tester.jpg",
     size: "medium",
   },
   {
-    name: "DESIGN",
-    nameAccent: "COLLAB",
-    subdomain: "collab",
-    category: "DESIGN COLLABORATION",
+    name: "PO",
+    nameAccent: "HELPER",
+    subdomain: "pohelper",
+    category: "PRODUCTIVITY TOOL",
     year: 2025,
     description:
-      "A collaborative design tool for remote teams to brainstorm and create together.",
-    image: "/projects/collab.png",
+      "A smart assistant for product owners — helps manage backlogs, write stories, and track priorities.",
+    image: "/projects/po-helper.jpg",
     size: "medium",
-  },
-  {
-    name: "DEV TOOLKIT",
-    subdomain: "tools",
-    category: "DEVELOPER TOOLS",
-    year: 2024,
-    description:
-      "A developer toolkit with CLI utilities and automation scripts for daily workflows.",
-    image: "/projects/tools.png",
-    size: "small",
   },
 ];
 

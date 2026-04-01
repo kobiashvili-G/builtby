@@ -24,28 +24,3 @@ body {
   font-family: var(--font-body);
 }
 
-@keyframes line-flow-1 {
-  0%, 100% { stroke-dashoffset: 0; }
-  50% { stroke-dashoffset: 40; }
-}
-@keyframes line-flow-2 {
-  0%, 100% { stroke-dashoffset: 0; }
-  50% { stroke-dashoffset: -30; }
-}
-@keyframes line-flow-3 {
-  0%, 100% { stroke-dashoffset: 0; }
-  50% { stroke-dashoffset: 50; }
-}
-
-.animate-line-flow-1 {
-  stroke-dasharray: 20 10;
-  animation: line-flow-1 12s ease-in-out infinite;
-}
-.animate-line-flow-2 {
-  stroke-dasharray: 15 12;
-  animation: line-flow-2 16s ease-in-out infinite;
-}
-.animate-line-flow-3 {
-  stroke-dasharray: 25 8;
-  animation: line-flow-3 20s ease-in-out infinite;
-}

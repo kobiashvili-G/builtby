@@ -12,9 +12,8 @@ import { ProjectCard } from "./project-card";
  */
 const scatterPositions = [
   "md:col-start-1 md:row-start-1 md:justify-self-start",        // large — top left
-  "md:col-start-2 md:row-start-1 md:justify-self-end md:mt-12", // medium — top right, offset down
-  "md:col-start-1 md:row-start-2 md:justify-self-start",        // small — bottom left
-  "md:col-start-2 md:row-start-2 md:justify-self-center md:-mt-8", // medium — bottom center-right, offset up
+  "md:col-start-2 md:row-start-1 md:justify-self-end md:mt-16",  // medium — top right, offset down
+  "md:col-start-1 md:col-span-2 md:row-start-2 md:justify-self-center md:mt-8", // medium — centered below
 ] as const;
 
 export function ProjectsSection() {
