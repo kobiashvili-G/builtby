@@ -1,0 +1,34 @@
+[     104ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[     140ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[     175ms] [WARNING] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  392843ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  392852ms] [WARNING] [HMR] Invalid message: {"isTrusted":true}
+TypeError: Cannot convert undefined or null to object
+    at Object.keys (<anonymous>)
+    at extractModulesFromTurbopackMessage (http://localhost:3000/_next/static/chunks/0evb_next_dist_client_0mjgyuu._.js:13631:39)
+    at TurbopackHmr.onTurbopackMessage (http://localhost:3000/_next/static/chunks/0evb_next_dist_client_0mjgyuu._.js:13578:32)
+    at processMessage (http://localhost:3000/_next/static/chunks/0evb_next_dist_client_0mjgyuu._.js:13936:30)
+    at WebSocket.handleMessage (http://localhost:3000/_next/static/chunks/0evb_next_dist_client_0mjgyuu._.js:13335:52) @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  392925ms] [LOG] [Fast Refresh] done in 94ms @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  393032ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  393032ms] [LOG] [Fast Refresh] done in 102ms @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  398226ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  398276ms] [LOG] [Fast Refresh] done in 93ms @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  404131ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  404159ms] [LOG] [Fast Refresh] done in 14ms @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  404260ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  404308ms] [LOG] [Fast Refresh] done in 150ms @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  404314ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3000/_next/image?url=%2Fprojects%2Fpo-helper.jpg&w=1080&q=75:0
+[  404315ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3000/_next/image?url=%2Fprojects%2Fimage-approver.jpg&w=1080&q=75:0
+[  404315ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3000/_next/image?url=%2Fprojects%2Fprompt-tester.jpg&w=1080&q=75:0
+[  412390ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  412420ms] [LOG] [Fast Refresh] done in 43ms @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  425598ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  425673ms] [LOG] [Fast Refresh] done in 107ms @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  425750ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3000/_next/image?url=%2Fprojects%2Fimage-approver.jpg&w=1080&q=75:0
+[  425752ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3000/_next/image?url=%2Fprojects%2Fprompt-tester.jpg&w=1080&q=75:0
+[  425753ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:3000/_next/image?url=%2Fprojects%2Fpo-helper.jpg&w=1080&q=75:0
+[  429726ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  429754ms] [LOG] [Fast Refresh] done in 30ms @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  577142ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431
+[  577171ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/0evb_next_dist_10s2rv.._.js:2431

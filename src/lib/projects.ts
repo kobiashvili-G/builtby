@@ -33,13 +33,13 @@ export const projects: Project[] = [
     size: "medium",
   },
   {
-    name: "PO",
-    nameAccent: "HELPER",
+    name: "IDEA TO",
+    nameAccent: "VALUE",
     subdomain: "pohelper",
-    category: "PRODUCTIVITY TOOL",
+    category: "AI SPEC BUILDER",
     year: 2025,
     description:
-      "A smart assistant for product owners — helps manage backlogs, write stories, and track priorities.",
+      "Transforms product ideas into structured specs using AI — from Idea Cards through Epics, User Stories, and Jira-ready exports.",
     image: "/projects/po-helper.jpg",
     size: "medium",
   },

@@ -1,0 +1,90 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic:
+      - img
+    - navigation [ref=e3]:
+      - generic [ref=e4]: BUILTBY
+      - generic [ref=e5]: B
+      - generic [ref=e6]:
+        - link "PROJECTS" [ref=e7] [cursor=pointer]:
+          - /url: "#projects"
+          - img [ref=e8]
+          - text: PROJECTS
+        - button "Menu" [ref=e12]:
+          - img [ref=e13]
+    - generic [ref=e14]:
+      - generic [ref=e19]:
+        - text: ACTIVE PROJECTS
+        - paragraph [ref=e20]: "04"
+        - generic [ref=e22]:
+          - text: VERCEL
+          - text: SINCE 2024
+      - generic [ref=e23]:
+        - paragraph [ref=e24]:
+          - text: Things I built
+          - text: with love & code.
+        - paragraph [ref=e25]: — Kobi
+      - generic [ref=e26]:
+        - generic:
+          - heading "BUILT BY.PRO" [level=1]:
+            - generic: BUILT
+            - generic: BY.PRO
+        - paragraph [ref=e27]:
+          - text: A collection of live projects, experiments
+          - text: "& tools — crafted with curiosity."
+    - generic [ref=e28]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: PROJECTS
+        - generic [ref=e33]: 01 / 04
+      - generic [ref=e34]:
+        - link "ANALYTICS DASHBOARD, 2024 A real-time dashboard for tracking analytics and user engagement metrics. ANALYTICS DASHBOARD analytics.builtby.pro →" [ref=e36] [cursor=pointer]:
+          - /url: https://analytics.builtby.pro
+          - generic [ref=e37]: ANALYTICS DASHBOARD, 2024
+          - img "A real-time dashboard for tracking analytics and user engagement metrics." [ref=e40]
+          - generic [ref=e41]:
+            - generic [ref=e42]: ANALYTICS
+            - generic [ref=e43]: DASHBOARD
+          - generic [ref=e44]: analytics.builtby.pro →
+        - link "AI WRITING TOOL, 2025 An AI-powered writing assistant that helps create better content faster. AI WRITER writer.builtby.pro →" [ref=e46] [cursor=pointer]:
+          - /url: https://writer.builtby.pro
+          - generic [ref=e47]: AI WRITING TOOL, 2025
+          - img "An AI-powered writing assistant that helps create better content faster." [ref=e50]
+          - generic [ref=e51]:
+            - generic [ref=e52]: AI
+            - generic [ref=e53]: WRITER
+          - generic [ref=e54]: writer.builtby.pro →
+        - link "DESIGN COLLABORATION, 2025 A collaborative design tool for remote teams to brainstorm and create together. DESIGN COLLAB collab.builtby.pro →" [ref=e56] [cursor=pointer]:
+          - /url: https://collab.builtby.pro
+          - generic [ref=e57]: DESIGN COLLABORATION, 2025
+          - img "A collaborative design tool for remote teams to brainstorm and create together." [ref=e60]
+          - generic [ref=e61]:
+            - generic [ref=e62]: DESIGN
+            - generic [ref=e63]: COLLAB
+          - generic [ref=e64]: collab.builtby.pro →
+        - link "DEVELOPER TOOLS, 2024 A developer toolkit with CLI utilities and automation scripts for daily workflows. DEV TOOLKIT tools.builtby.pro →" [ref=e66] [cursor=pointer]:
+          - /url: https://tools.builtby.pro
+          - generic [ref=e67]: DEVELOPER TOOLS, 2024
+          - img "A developer toolkit with CLI utilities and automation scripts for daily workflows." [ref=e70]
+          - generic [ref=e72]: DEV TOOLKIT
+          - generic [ref=e73]: tools.builtby.pro →
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]: BUILDING
+        - generic [ref=e77]: IDEAS
+        - generic [ref=e78]: INTO
+      - generic [ref=e79]:
+        - generic [ref=e80]: REAL
+        - generic [ref=e81]: THINGS.
+    - generic [ref=e82]:
+      - generic [ref=e84]:
+        - generic [ref=e85]: ©2026, BuiltBy.pro
+        - generic [ref=e86]:
+          - link "GitHub" [ref=e87] [cursor=pointer]:
+            - /url: "#"
+          - link "Twitter" [ref=e88] [cursor=pointer]:
+            - /url: "#"
+          - link "LinkedIn" [ref=e89] [cursor=pointer]:
+            - /url: "#"
+      - paragraph [ref=e90]: Crafted with curiosity and code
+  - button "Open Next.js Dev Tools" [ref=e96] [cursor=pointer]:
+    - img [ref=e97]
