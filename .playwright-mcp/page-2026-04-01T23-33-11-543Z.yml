@@ -1,0 +1,10 @@
+- generic [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - img [ref=e6]
+      - heading "Image Feedback" [level=1] [ref=e10]
+      - paragraph [ref=e11]: Help us pick the best images
+      - generic [ref=e12]:
+        - textbox "Enter your name" [active] [ref=e13]
+        - button "Start Reviewing" [disabled] [ref=e14]
+  - alert [ref=e15]

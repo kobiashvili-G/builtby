@@ -1,0 +1,57 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - img "Clarify" [ref=e6]
+          - paragraph [ref=e7]: Clarify
+        - paragraph [ref=e8]: Clarify your ideas
+        - paragraph [ref=e9]: Turn raw ideas into structured, actionable documents — guided by AI, shaped by you.
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - paragraph [ref=e13]: "01"
+            - paragraph [ref=e14]: Describe your idea
+          - generic [ref=e15]:
+            - paragraph [ref=e16]: "02"
+            - paragraph [ref=e17]: AI asks the right questions
+          - generic [ref=e18]:
+            - paragraph [ref=e19]: "03"
+            - paragraph [ref=e20]: Get a structured document
+        - generic [ref=e21]:
+          - paragraph [ref=e22]: “What used to take us 2 weeks of back-and-forth now takes a single focused session. The AI asks exactly what stakeholders would ask.”
+          - paragraph [ref=e23]: — Product Lead, Digital Banking
+    - generic [ref=e26]:
+      - paragraph [ref=e27]: Welcome back
+      - paragraph [ref=e28]: Sign in to pick up where you left off
+      - button "Continue with Google" [ref=e29] [cursor=pointer]:
+        - img [ref=e31]
+        - text: Continue with Google
+      - separator [ref=e34]:
+        - generic [ref=e35]: or
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic:
+            - text: Email
+            - generic: "*"
+          - generic [ref=e39]:
+            - textbox "Email" [ref=e40]
+            - group:
+              - generic: Email *
+        - generic [ref=e41]:
+          - generic:
+            - text: Password
+            - generic: "*"
+          - generic [ref=e42]:
+            - textbox "Password" [ref=e43]
+            - button [ref=e45] [cursor=pointer]:
+              - img [ref=e46]
+            - group:
+              - generic: Password *
+        - button "Sign in" [ref=e51] [cursor=pointer]:
+          - text: Sign in
+          - img [ref=e53]
+      - paragraph [ref=e56]:
+        - text: New here?
+        - button "Create an account" [ref=e57] [cursor=pointer]
+  - alert [ref=e58]

@@ -1,0 +1,22 @@
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - img [ref=e8]
+    - heading "Product Discovery Hub" [level=2] [ref=e11]
+    - paragraph [ref=e12]: Internal platform for product teams
+  - generic [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e15]: Email *
+      - generic [ref=e16]:
+        - img [ref=e18]
+        - textbox "Email" [ref=e21]:
+          - /placeholder: your@email.com
+    - generic [ref=e22]:
+      - generic [ref=e23]: Password *
+      - generic [ref=e24]:
+        - textbox "Password" [ref=e26]:
+          - /placeholder: Your password
+        - button [ref=e28] [cursor=pointer]:
+          - img [ref=e30]
+    - paragraph [ref=e33]: Forgot password?
+    - button "Sign in" [ref=e34] [cursor=pointer]:
+      - generic [ref=e36]: Sign in

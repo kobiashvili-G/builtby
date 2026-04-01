@@ -1,0 +1,53 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Prompt Tester" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: Prompt Tester
+      - generic [ref=e7]:
+        - link "Dashboard" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Prompts" [ref=e9] [cursor=pointer]:
+          - /url: /prompts
+        - link "Scenarios" [ref=e10] [cursor=pointer]:
+          - /url: /scenarios
+        - link "Presets" [ref=e11] [cursor=pointer]:
+          - /url: /presets
+        - link "Runs" [ref=e12] [cursor=pointer]:
+          - /url: /runs
+        - link "Settings" [ref=e13] [cursor=pointer]:
+          - /url: /settings
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - heading "Dashboard" [level=1] [ref=e16]
+      - generic [ref=e17]:
+        - paragraph [ref=e18]: Quick Run
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - generic [ref=e21]: Scenario
+            - combobox [ref=e22]:
+              - generic [ref=e23]: Select scenario...
+              - img: ▼
+            - textbox [ref=e24]
+          - generic [ref=e25]:
+            - generic [ref=e26]: Prompt Version
+            - combobox [ref=e27]:
+              - generic [ref=e28]: Select version...
+              - img: ▼
+            - textbox [ref=e29]
+          - generic [ref=e30]:
+            - generic [ref=e31]: Model
+            - combobox [ref=e32]:
+              - generic [ref=e33]: gemini-2.5-flash
+              - img: ▼
+            - textbox [ref=e34]: gemini-2.5-flash
+          - button "Run" [disabled] [ref=e35]
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - paragraph [ref=e38]: Recent Runs
+          - paragraph [ref=e39]: Loading...
+        - generic [ref=e40]:
+          - paragraph [ref=e41]: Recent Batch Runs
+          - paragraph [ref=e42]: Loading...
+  - region "Notifications alt+T"
+  - alert [ref=e43]
