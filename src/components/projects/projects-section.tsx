@@ -4,38 +4,34 @@ import { motion } from "motion/react";
 import { projects } from "@/lib/projects";
 import { ProjectCard } from "./project-card";
 
-/*
- * Editorial scatter layout — NOT a grid.
- * Each project is positioned at a specific location for an intentional
- * asymmetric magazine-like feel. Positions are defined as Tailwind classes
- * per breakpoint. On mobile, falls back to a single-column stack.
- */
 const scatterPositions = [
-  "md:col-start-1 md:row-start-1 md:justify-self-start",        // large — top left
-  "md:col-start-2 md:row-start-1 md:justify-self-end md:mt-16",  // medium — top right, offset down
-  "md:col-start-1 md:col-span-2 md:row-start-2 md:justify-self-center md:mt-8", // medium — centered below
+  "md:col-start-1 md:row-start-1 md:justify-self-start",
+  "md:col-start-2 md:row-start-1 md:justify-self-end md:mt-16",
+  "md:col-start-1 md:col-span-2 md:row-start-2 md:justify-self-center md:mt-8",
 ] as const;
 
 export function ProjectsSection() {
   return (
     <section id="projects" className="relative z-10 px-8 py-16 md:px-16">
-      {/* Section header */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        className="mb-12"
-      >
-        <div className="h-px w-full bg-subtle" />
-        <div className="mt-4 flex items-center justify-between">
-          <span className="font-body text-[10px] font-semibold uppercase tracking-[3px] text-tertiary">
-            PROJECTS
-          </span>
-          <span className="font-body text-[11px] font-medium tracking-[1px] text-tertiary">
-            01 / {String(projects.length).padStart(2, "0")}
-          </span>
-        </div>
-      </motion.div>
+      {/* Section transition — animated line draw + label */}
+      <div className="mb-16 overflow-hidden">
+        <motion.div
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          className="h-px w-full origin-left bg-gradient-to-r from-subtle via-tertiary to-subtle"
+        />
+        <motion.span
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mt-4 inline-block font-body text-[10px] font-semibold uppercase tracking-[3px] text-tertiary"
+        >
+          PROJECTS
+        </motion.span>
+      </div>
 
       {/* Editorial scatter */}
       <div className="grid gap-12 md:grid-cols-2 md:gap-x-16 md:gap-y-20">
