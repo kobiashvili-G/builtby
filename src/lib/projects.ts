@@ -33,13 +33,13 @@ export const projects: Project[] = [
     size: "medium",
   },
   {
-    name: "IDEA TO",
-    nameAccent: "VALUE",
-    subdomain: "pohelper",
+    name: "CLARIFY",
+    nameAccent: "AI",
+    subdomain: "product",
     category: "AI SPEC BUILDER",
     year: 2025,
     description:
-      "Transforms product ideas into structured specs using AI — from Idea Cards through Epics, User Stories, and Jira-ready exports.",
+      "Turn raw ideas into structured, actionable documents — guided by AI, shaped by you.",
     image: "/projects/po-helper.jpg",
     size: "medium",
   },
