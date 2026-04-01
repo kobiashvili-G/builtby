@@ -24,7 +24,7 @@ const titleSizes = {
 } as const;
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
-  const ref = useRef(null);
+  const ref = useRef<HTMLAnchorElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
@@ -54,7 +54,6 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             src={project.image}
             alt={project.description}
             fill
-            unoptimized
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes={
               project.size === "large"

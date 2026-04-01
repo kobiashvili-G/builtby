@@ -32,10 +32,8 @@ export function GlowyWaves() {
     let animationId: number;
     let time = 0;
 
-    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const mouseInfluence = prefersReduced ? 10 : 70;
-    const influenceRadius = prefersReduced ? 160 : 320;
-    const smoothing = prefersReduced ? 0.04 : 0.1;
+    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let prefersReduced = motionQuery.matches;
 
     const resize = () => {
       canvas.width = canvas.offsetWidth;
@@ -54,6 +52,9 @@ export function GlowyWaves() {
     };
 
     const drawWave = (wave: WaveConfig) => {
+      const mouseInfluence = prefersReduced ? 10 : 70;
+      const influenceRadius = prefersReduced ? 160 : 320;
+
       ctx.save();
       ctx.beginPath();
       for (let x = 0; x <= canvas.width; x += 4) {
@@ -81,7 +82,18 @@ export function GlowyWaves() {
       ctx.restore();
     };
 
+    const drawStaticFrame = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+      gradient.addColorStop(0, "#F5F0EB");
+      gradient.addColorStop(1, "#EDE7DF");
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    };
+
     const animate = () => {
+      const smoothing = prefersReduced ? 0.04 : 0.1;
+
       time += 1;
       mouseRef.current.x += (targetMouseRef.current.x - mouseRef.current.x) * smoothing;
       mouseRef.current.y += (targetMouseRef.current.y - mouseRef.current.y) * smoothing;
@@ -92,22 +104,41 @@ export function GlowyWaves() {
       gradient.addColorStop(0, "#F5F0EB");
       gradient.addColorStop(1, "#EDE7DF");
       ctx.fillStyle = gradient;
+      ctx.shadowBlur = 0;
+      ctx.shadowColor = "transparent";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       WAVE_PALETTE.forEach(drawWave);
       animationId = requestAnimationFrame(animate);
     };
 
+    const handleMotionChange = (e: MediaQueryListEvent) => {
+      prefersReduced = e.matches;
+      if (prefersReduced) {
+        cancelAnimationFrame(animationId);
+        drawStaticFrame();
+      } else {
+        animationId = requestAnimationFrame(animate);
+      }
+    };
+    motionQuery.addEventListener("change", handleMotionChange);
+
     resize();
     window.addEventListener("resize", resize);
     canvas.addEventListener("mousemove", handleMouseMove);
     canvas.addEventListener("mouseleave", handleMouseLeave);
-    animationId = requestAnimationFrame(animate);
+
+    if (prefersReduced) {
+      drawStaticFrame();
+    } else {
+      animationId = requestAnimationFrame(animate);
+    }
 
     return () => {
       window.removeEventListener("resize", resize);
       canvas.removeEventListener("mousemove", handleMouseMove);
       canvas.removeEventListener("mouseleave", handleMouseLeave);
+      motionQuery.removeEventListener("change", handleMotionChange);
       cancelAnimationFrame(animationId);
     };
   }, []);

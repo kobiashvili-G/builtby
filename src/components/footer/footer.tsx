@@ -7,6 +7,7 @@ export function Footer() {
           ©2026, BuiltBy.pro
         </span>
         <div className="flex gap-6">
+          {/* TODO: Replace "#" with real URLs before launch */}
           {[
             { name: "GitHub", href: "#" },
             { name: "Twitter", href: "#" },
@@ -15,7 +16,6 @@ export function Footer() {
             <a
               key={link.name}
               href={link.href}
-              target="_blank"
               rel="noopener noreferrer"
               className="font-body text-xs text-tertiary transition-colors hover:text-accent"
             >
