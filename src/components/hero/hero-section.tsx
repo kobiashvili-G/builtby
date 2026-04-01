@@ -11,6 +11,7 @@ export function HeroSection() {
       <GlowyWaves />
 
       {/* Hero image — MUST blend seamlessly, no hard edges */}
+      <div className="absolute left-1/2 top-1/2 h-[50vh] w-[35vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent-bg/20 blur-[100px]" />
       <div
         className="absolute left-1/2 top-1/2 h-[70vh] w-[45vw] -translate-x-1/2 -translate-y-1/2"
         style={{
@@ -19,13 +20,13 @@ export function HeroSection() {
         }}
       >
         {/* Replace with artist-sourced image later */}
-        <div className="h-full w-full bg-gradient-to-br from-accent/20 via-accent-bg/30 to-subtle/20" />
+        <div className="h-full w-full bg-gradient-to-br from-emerald-400/40 via-lime-300/50 to-amber-200/30" />
       </div>
 
       {/* Info box */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 40, scale: 0.9 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
         className="absolute left-8 top-28 z-20 border border-subtle p-4 md:left-16"
       >
@@ -45,8 +46,8 @@ export function HeroSection() {
 
       {/* Quote */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.6 }}
         className="absolute right-8 top-[55%] z-20 max-w-[300px] md:right-16"
       >
@@ -62,9 +63,9 @@ export function HeroSection() {
       <div className="relative z-10 pb-8">
         <HeroText />
         <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
+          initial={{ opacity: 0, y: 10, scale: 0.97 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-6 max-w-[340px] font-body text-base text-secondary"
         >
           A collection of live projects, experiments

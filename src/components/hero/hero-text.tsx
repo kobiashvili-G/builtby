@@ -9,7 +9,7 @@ export function HeroText() {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   return (
     <motion.div

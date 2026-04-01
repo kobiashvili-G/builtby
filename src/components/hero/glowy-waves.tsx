@@ -11,11 +11,12 @@ interface WaveConfig {
 }
 
 const WAVE_PALETTE: WaveConfig[] = [
-  { offset: 0, amplitude: 70, frequency: 0.003, color: "rgba(58, 125, 0, 0.6)", opacity: 0.4 },
-  { offset: Math.PI / 2, amplitude: 90, frequency: 0.0026, color: "rgba(191, 255, 0, 0.4)", opacity: 0.3 },
-  { offset: Math.PI, amplitude: 60, frequency: 0.0034, color: "rgba(212, 203, 194, 0.5)", opacity: 0.25 },
-  { offset: Math.PI * 1.5, amplitude: 80, frequency: 0.0022, color: "rgba(26, 26, 26, 0.15)", opacity: 0.2 },
-  { offset: Math.PI * 2, amplitude: 55, frequency: 0.004, color: "rgba(113, 113, 122, 0.2)", opacity: 0.15 },
+  { offset: 0, amplitude: 105, frequency: 0.003, color: "rgba(58, 125, 0, 0.85)", opacity: 0.65 },
+  { offset: Math.PI / 2, amplitude: 135, frequency: 0.0026, color: "rgba(191, 255, 0, 0.7)", opacity: 0.5 },
+  { offset: Math.PI, amplitude: 90, frequency: 0.0034, color: "rgba(212, 203, 194, 0.75)", opacity: 0.4 },
+  { offset: Math.PI * 1.5, amplitude: 120, frequency: 0.0022, color: "rgba(26, 26, 26, 0.45)", opacity: 0.35 },
+  { offset: Math.PI * 2, amplitude: 82, frequency: 0.004, color: "rgba(113, 113, 122, 0.5)", opacity: 0.3 },
+  { offset: Math.PI * 0.75, amplitude: 95, frequency: 0.0028, color: "rgba(100, 200, 80, 0.65)", opacity: 0.45 },
 ];
 
 export function GlowyWaves() {
@@ -76,7 +77,7 @@ export function GlowyWaves() {
       ctx.lineWidth = 2.5;
       ctx.strokeStyle = wave.color;
       ctx.globalAlpha = wave.opacity;
-      ctx.shadowBlur = 35;
+      ctx.shadowBlur = 50;
       ctx.shadowColor = wave.color;
       ctx.stroke();
       ctx.restore();

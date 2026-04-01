@@ -11,6 +11,13 @@ interface ProjectCardProps {
   index: number;
 }
 
+const gradientBgs = [
+  "bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900",
+  "bg-gradient-to-br from-violet-600 via-purple-700 to-indigo-800",
+  "bg-gradient-to-br from-emerald-600 via-teal-700 to-cyan-800",
+  "bg-gradient-to-br from-amber-600 via-orange-700 to-red-800",
+] as const;
+
 const sizeClasses = {
   large: "w-full md:w-[480px] h-[360px]",
   medium: "w-full md:w-[520px] h-[400px]",
@@ -29,7 +36,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
     target: ref,
     offset: ["start end", "end start"],
   });
-  const imageY = useTransform(scrollYProgress, [0, 1], ["-5%", "5%"]);
+  const imageY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
   return (
     <motion.a
@@ -37,7 +44,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       href={getProjectUrl(project.subdomain)}
       target="_blank"
       rel="noopener noreferrer"
-      initial={{ opacity: 0, y: 40, rotate: index % 2 === 0 ? -2 : 2 }}
+      initial={{ opacity: 0, y: 60, rotate: index % 2 === 0 ? -4 : 4, scale: 0.95 }}
       whileInView={{ opacity: 1, y: 0, rotate: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.7, delay: index * 0.15 }}
@@ -48,7 +55,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         {project.category}, {project.year}
       </span>
 
-      <div className={`mt-1 overflow-hidden ${sizeClasses[project.size]}`}>
+      <div className={`mt-1 overflow-hidden ${sizeClasses[project.size]} ${gradientBgs[index % gradientBgs.length]}`}>
         <motion.div className="relative h-full w-full" style={{ y: imageY }}>
           <Image
             src={project.image}
