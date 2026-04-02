@@ -1,8 +1,7 @@
 "use client";
 
-import { motion, useMotionValue } from "motion/react";
-import { useLenis } from "lenis/react";
-import { useRef, useCallback } from "react";
+import { motion } from "motion/react";
+import { useRef } from "react";
 import type { Project } from "@/lib/projects";
 import { getProjectUrl } from "@/lib/projects";
 
@@ -11,63 +10,21 @@ interface ProjectCardProps {
   index: number;
 }
 
-const cardStyles = [
-  {
-    bg: "from-slate-900 via-slate-800 to-slate-900",
-    text: "text-white",
-    accent: "text-amber-400",
-    label: "text-slate-400",
-    link: "text-amber-400/70 group-hover:text-amber-300",
-    border: "border-slate-700/50",
-    glow: "bg-amber-500/10",
-  },
-  {
-    bg: "from-indigo-950 via-violet-900 to-indigo-950",
-    text: "text-white",
-    accent: "text-violet-300",
-    label: "text-violet-400/70",
-    link: "text-violet-300/70 group-hover:text-violet-200",
-    border: "border-violet-700/30",
-    glow: "bg-violet-500/10",
-  },
-  {
-    bg: "from-emerald-950 via-teal-900 to-emerald-950",
-    text: "text-white",
-    accent: "text-emerald-300",
-    label: "text-emerald-400/70",
-    link: "text-emerald-300/70 group-hover:text-emerald-200",
-    border: "border-emerald-700/30",
-    glow: "bg-emerald-500/10",
-  },
+const blobGradients = [
+  "from-pink-500 via-red-500 to-yellow-500",
+  "from-violet-500 via-purple-500 to-blue-500",
+  "from-emerald-400 via-cyan-500 to-blue-500",
 ] as const;
 
 const sizeClasses = {
-  large: "w-full md:w-[520px]",
-  medium: "w-full md:w-[480px]",
-  small: "w-full md:w-[380px]",
+  large: "w-full md:w-[420px] h-[320px]",
+  medium: "w-full md:w-[400px] h-[300px]",
+  small: "w-full md:w-[360px] h-[280px]",
 } as const;
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
   const ref = useRef<HTMLAnchorElement>(null);
-  const cardY = useMotionValue("0%");
-  const style = cardStyles[index % cardStyles.length];
-
-  useLenis(
-    useCallback(
-      ({ scroll }: { scroll: number }) => {
-        if (ref.current) {
-          const rect = ref.current.getBoundingClientRect();
-          const windowHeight = window.innerHeight;
-          const progress =
-            1 - (rect.top + rect.height) / (windowHeight + rect.height);
-          const clampedProgress = Math.max(0, Math.min(1, progress));
-          const yValue = (clampedProgress - 0.5) * 10;
-          cardY.set(`${yValue}%`);
-        }
-      },
-      [cardY]
-    )
-  );
+  const blobGradient = blobGradients[index % blobGradients.length];
 
   return (
     <motion.a
@@ -79,62 +36,50 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       whileInView={{ opacity: 1, y: 0, rotate: 0, scale: 1 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.7, delay: index * 0.15 }}
-      whileHover={{ scale: 1.03, y: -8 }}
+      whileHover={{ scale: 1.04, y: -6 }}
       className={`group block ${sizeClasses[project.size]}`}
     >
-      <div
-        className={`relative overflow-hidden rounded-2xl bg-gradient-to-br ${style.bg} border ${style.border} p-8 md:p-10 transition-shadow duration-500 group-hover:shadow-2xl group-hover:shadow-black/20`}
-      >
-        {/* Subtle glow accents */}
+      <div className="relative h-full w-full rounded-[14px] overflow-hidden shadow-[20px_20px_60px_#bebebe,-20px_-20px_60px_#ffffff]">
+        {/* Glassy background */}
+        <div className="absolute inset-[5px] bg-white/95 backdrop-blur-[24px] rounded-[10px] outline outline-2 outline-white z-10" />
+
+        {/* Animated gradient blob */}
         <div
-          className={`absolute -right-12 -top-12 h-48 w-48 rounded-full ${style.glow} blur-3xl`}
-        />
-        <div
-          className={`absolute -bottom-8 -left-8 h-32 w-32 rounded-full ${style.glow} blur-2xl opacity-50`}
+          className={`absolute top-1/2 left-1/2 w-[200px] h-[200px] rounded-full opacity-100 blur-[20px] z-0 animate-blob bg-gradient-to-r ${blobGradient}`}
+          style={{ animationDelay: `${index * -1.5}s` }}
         />
 
-        {/* Category */}
-        <span
-          className={`relative font-body text-[10px] font-medium uppercase tracking-[2px] ${style.label}`}
-        >
-          {project.category}
-        </span>
-
-        {/* Project name — massive typography */}
-        <div className="relative mt-4">
-          <span
-            className={`block font-display text-4xl font-extrabold tracking-tight ${style.text} md:text-5xl`}
-          >
-            {project.name}
+        {/* Card content */}
+        <div className="relative z-20 flex h-full flex-col justify-between p-7 md:p-8">
+          {/* Top: category */}
+          <span className="font-body text-[10px] font-medium uppercase tracking-[2px] text-secondary">
+            {project.category}
           </span>
-          {project.nameAccent && (
-            <span
-              className={`block font-display text-4xl font-extrabold tracking-tight ${style.accent} md:text-5xl`}
-            >
-              {project.nameAccent}
+
+          {/* Middle: project name */}
+          <div>
+            <span className="block font-display text-3xl font-extrabold tracking-tight text-primary md:text-4xl">
+              {project.name}
             </span>
-          )}
-        </div>
+            {project.nameAccent && (
+              <span className="block font-display text-3xl font-extrabold tracking-tight text-accent md:text-4xl">
+                {project.nameAccent}
+              </span>
+            )}
+            <p className="mt-2 max-w-[280px] font-body text-[13px] leading-relaxed text-secondary">
+              {project.description}
+            </p>
+          </div>
 
-        {/* Description */}
-        <p
-          className={`relative mt-4 max-w-[320px] font-body text-sm leading-relaxed ${style.text} opacity-60`}
-        >
-          {project.description}
-        </p>
-
-        {/* Link */}
-        <div className="relative mt-6 flex items-center justify-between">
-          <span
-            className={`font-body text-[13px] font-medium ${style.link} transition-colors`}
-          >
-            {project.subdomain}.builtby.pro
-          </span>
-          <span
-            className={`font-body text-lg ${style.link} transition-all group-hover:translate-x-1`}
-          >
-            →
-          </span>
+          {/* Bottom: link */}
+          <div className="flex items-center justify-between">
+            <span className="font-body text-[13px] font-medium text-tertiary transition-colors group-hover:text-accent">
+              {project.subdomain}.builtby.pro
+            </span>
+            <span className="text-lg text-tertiary transition-all group-hover:translate-x-1 group-hover:text-accent">
+              →
+            </span>
+          </div>
         </div>
       </div>
     </motion.a>
