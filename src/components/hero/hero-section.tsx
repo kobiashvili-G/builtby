@@ -30,7 +30,7 @@ export function HeroSection() {
         className="absolute left-8 top-28 z-20 border border-subtle p-4 md:left-16"
       >
         <span className="font-body text-[9px] font-semibold uppercase tracking-[2px] text-tertiary">
-          LIVE NOW
+          LIVE
         </span>
         <p className="font-display text-5xl font-extrabold text-primary">
           {String(projects.length).padStart(2, "0")}
@@ -39,7 +39,7 @@ export function HeroSection() {
         <span className="font-body text-[9px] font-medium uppercase tracking-[1.5px] text-secondary leading-relaxed">
           PROJECTS
           <br />
-          RUNNING
+          ON AIR
         </span>
       </motion.div>
 
@@ -51,9 +51,9 @@ export function HeroSection() {
         className="absolute right-8 top-[55%] z-20 max-w-[300px] md:right-16"
       >
         <p className="font-body text-2xl italic leading-relaxed text-secondary">
-          Where ideas become
+          Scroll down to explore
           <br />
-          working software.
+          what&apos;s live.
         </p>
       </motion.div>
 
@@ -66,9 +66,9 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-6 max-w-[340px] font-body text-base text-secondary"
         >
-          Live projects, tools, and experiments
+          Everything hosted on builtby.pro
           <br />
-          — all in one place.
+          — tap any project to open it.
         </motion.p>
       </div>
     </section>

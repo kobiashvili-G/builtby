@@ -1,0 +1,81 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic:
+      - img
+    - navigation [ref=e3]:
+      - generic [ref=e4]: BUILTBY
+      - generic [ref=e5]: .PRO
+    - generic [ref=e6]:
+      - generic [ref=e11]:
+        - text: LIVE NOW
+        - paragraph [ref=e12]: "03"
+        - generic [ref=e14]:
+          - text: PROJECTS
+          - text: RUNNING
+      - paragraph [ref=e16]:
+        - text: Where ideas become
+        - text: working software.
+      - generic [ref=e17]:
+        - generic:
+          - heading "BUILT BY.PRO" [level=1]:
+            - generic: BUILT
+            - generic: BY.PRO
+        - paragraph [ref=e18]:
+          - text: Live projects, tools, and experiments
+          - text: — all in one place.
+    - generic [ref=e19]:
+      - generic [ref=e21]: PROJECTS
+      - generic [ref=e22]:
+        - link "IMAGE REVIEW TOOL IMAGE APPROVER A web app for collecting approve/reject feedback on images — streamlined visual content moderation. image.builtby.pro →" [ref=e24] [cursor=pointer]:
+          - /url: https://image.builtby.pro
+          - generic [ref=e28]:
+            - generic [ref=e29]: IMAGE REVIEW TOOL
+            - generic [ref=e30]:
+              - generic [ref=e31]: IMAGE
+              - generic [ref=e32]: APPROVER
+              - paragraph [ref=e33]: A web app for collecting approve/reject feedback on images — streamlined visual content moderation.
+            - generic [ref=e34]:
+              - generic [ref=e35]: image.builtby.pro
+              - generic [ref=e36]: →
+        - link "AI TESTING TOOL AI PROMPT TESTER A web tool for testing and comparing AI prompts against multiple models — find what works best. prompt.builtby.pro →" [ref=e38] [cursor=pointer]:
+          - /url: https://prompt.builtby.pro
+          - generic [ref=e42]:
+            - generic [ref=e43]: AI TESTING TOOL
+            - generic [ref=e44]:
+              - generic [ref=e45]: AI PROMPT
+              - generic [ref=e46]: TESTER
+              - paragraph [ref=e47]: A web tool for testing and comparing AI prompts against multiple models — find what works best.
+            - generic [ref=e48]:
+              - generic [ref=e49]: prompt.builtby.pro
+              - generic [ref=e50]: →
+        - link "AI SPEC BUILDER CLARIFY AI Turn raw ideas into structured, actionable documents — guided by AI, shaped by you. product.builtby.pro →" [ref=e52] [cursor=pointer]:
+          - /url: https://product.builtby.pro
+          - generic [ref=e56]:
+            - generic [ref=e57]: AI SPEC BUILDER
+            - generic [ref=e58]:
+              - generic [ref=e59]: CLARIFY
+              - generic [ref=e60]: AI
+              - paragraph [ref=e61]: Turn raw ideas into structured, actionable documents — guided by AI, shaped by you.
+            - generic [ref=e62]:
+              - generic [ref=e63]: product.builtby.pro
+              - generic [ref=e64]: →
+    - generic [ref=e65]:
+      - generic [ref=e66]:
+        - generic [ref=e67]: SHIPPING
+        - generic [ref=e68]: IS
+        - generic [ref=e69]: THE
+      - generic [ref=e70]:
+        - generic [ref=e71]: ONLY
+        - generic [ref=e72]: PROOF.
+    - generic [ref=e75]:
+      - generic [ref=e76]: BuiltBy.pro — 2026
+      - generic [ref=e77]:
+        - link "GitHub" [ref=e78] [cursor=pointer]:
+          - /url: "#"
+        - link "Twitter" [ref=e79] [cursor=pointer]:
+          - /url: "#"
+        - link "LinkedIn" [ref=e80] [cursor=pointer]:
+          - /url: "#"
+  - button "Open Next.js Dev Tools" [ref=e86] [cursor=pointer]:
+    - img [ref=e87]
+  - alert [ref=e90]
