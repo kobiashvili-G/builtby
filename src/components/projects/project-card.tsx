@@ -8,6 +8,7 @@ import { getProjectUrl } from "@/lib/projects";
 interface ProjectCardProps {
   project: Project;
   index: number;
+  rotate?: number;
 }
 
 const blobGradients = [
@@ -18,12 +19,12 @@ const blobGradients = [
 ] as const;
 
 const sizeClasses = {
-  large: "w-full md:w-[420px] h-[320px]",
-  medium: "w-full md:w-[400px] h-[300px]",
-  small: "w-full md:w-[360px] h-[280px]",
+  large: "w-full md:w-[380px] h-[280px]",
+  medium: "w-full md:w-[360px] h-[270px]",
+  small: "w-full md:w-[340px] h-[250px]",
 } as const;
 
-export function ProjectCard({ project, index }: ProjectCardProps) {
+export function ProjectCard({ project, index, rotate = 0 }: ProjectCardProps) {
   const ref = useRef<HTMLAnchorElement>(null);
   const blobGradient = blobGradients[index % blobGradients.length];
 
@@ -33,11 +34,11 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       href={getProjectUrl(project)}
       target="_blank"
       rel="noopener noreferrer"
-      initial={{ opacity: 0, y: 60, rotate: index % 2 === 0 ? -3 : 3, scale: 0.95 }}
-      whileInView={{ opacity: 1, y: 0, rotate: 0, scale: 1 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.7, delay: index * 0.15 }}
-      whileHover={{ scale: 1.04, y: -6 }}
+      initial={{ opacity: 0, y: 50, rotate: rotate + (index % 2 === 0 ? -4 : 4), scale: 0.92 }}
+      whileInView={{ opacity: 1, y: 0, rotate, scale: 1 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.7, delay: index * 0.12 }}
+      whileHover={{ scale: 1.05, rotate: 0, y: -8 }}
       className={`group block ${sizeClasses[project.size]}`}
     >
       <div className="relative h-full w-full rounded-[14px] overflow-hidden shadow-[20px_20px_60px_#bebebe,-20px_-20px_60px_#ffffff]">
