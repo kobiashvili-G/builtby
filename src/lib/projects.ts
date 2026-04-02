@@ -43,8 +43,19 @@ export const projects: Project[] = [
     image: "/projects/po-helper.jpg",
     size: "medium",
   },
+  {
+    name: "UX COPY",
+    nameAccent: "ANALYZER",
+    subdomain: "copy",
+    category: "UX WRITING",
+    year: 2026,
+    description:
+      "Audit your UI translations for tone, clarity, and consistency across languages.",
+    image: "/projects/ux-copy-analyzer.jpg",
+    size: "medium",
+  },
 ];
 
-export function getProjectUrl(subdomain: string): string {
-  return `https://${subdomain}.builtby.pro`;
+export function getProjectUrl(project: Project): string {
+  return `https://${project.subdomain}.builtby.pro`;
 }

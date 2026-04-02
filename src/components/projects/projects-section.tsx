@@ -7,7 +7,8 @@ import { ProjectCard } from "./project-card";
 const scatterPositions = [
   "md:col-start-1 md:row-start-1 md:justify-self-start",
   "md:col-start-2 md:row-start-1 md:justify-self-end md:mt-16",
-  "md:col-start-1 md:col-span-2 md:row-start-2 md:justify-self-center md:mt-8",
+  "md:col-start-1 md:row-start-2 md:justify-self-start md:mt-8",
+  "md:col-start-2 md:row-start-2 md:justify-self-end md:mt-24",
 ] as const;
 
 export function ProjectsSection() {

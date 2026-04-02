@@ -14,6 +14,7 @@ const blobGradients = [
   "from-pink-500 via-red-500 to-yellow-500",
   "from-violet-500 via-purple-500 to-blue-500",
   "from-emerald-400 via-cyan-500 to-blue-500",
+  "from-amber-400 via-orange-500 to-rose-500",
 ] as const;
 
 const sizeClasses = {
@@ -29,7 +30,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
   return (
     <motion.a
       ref={ref}
-      href={getProjectUrl(project.subdomain)}
+      href={getProjectUrl(project)}
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0, y: 60, rotate: index % 2 === 0 ? -3 : 3, scale: 0.95 }}
