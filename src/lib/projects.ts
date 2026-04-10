@@ -54,6 +54,17 @@ export const projects: Project[] = [
     image: "/projects/ux-copy-analyzer.jpg",
     size: "medium",
   },
+  {
+    name: "PROMPT",
+    nameAccent: "MARKET",
+    subdomain: "market",
+    category: "PROMPT MGMT",
+    year: 2026,
+    description:
+      "Browse, share, and discover prompts across your team. A curated gallery for your best AI workflows.",
+    image: "/projects/prompt-market.jpg",
+    size: "medium",
+  },
 ];
 
 export function getProjectUrl(project: Project): string {

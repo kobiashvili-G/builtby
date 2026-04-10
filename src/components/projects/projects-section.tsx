@@ -12,8 +12,9 @@ import { ProjectCard } from "./project-card";
 const scatterLayout = [
   { top: "0%", left: "0%", rotate: -1.2 },
   { top: "2%", left: "52%", rotate: 1 },
-  { top: "52%", left: "4%", rotate: 0.8 },
-  { top: "48%", left: "56%", rotate: -0.6 },
+  { top: "34%", left: "4%", rotate: 0.8 },
+  { top: "32%", left: "56%", rotate: -0.6 },
+  { top: "66%", left: "24%", rotate: 0.5 },
 ] as const;
 
 export function ProjectsSection() {
@@ -40,7 +41,7 @@ export function ProjectsSection() {
       </div>
 
       {/* Editorial scatter — absolute on desktop, stacked on mobile */}
-      <div className="flex flex-col gap-8 md:relative md:h-[640px]">
+      <div className="flex flex-col gap-8 md:relative md:h-[940px]">
         {projects.map((project, index) => {
           const pos = scatterLayout[index];
           return (

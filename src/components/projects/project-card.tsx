@@ -16,6 +16,7 @@ const blobGradients = [
   "from-violet-500 via-purple-500 to-blue-500",
   "from-emerald-400 via-cyan-500 to-blue-500",
   "from-amber-400 via-orange-500 to-rose-500",
+  "from-sky-400 via-indigo-500 to-violet-500",
 ] as const;
 
 const sizeClasses = {
